@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 //Replace the url with your github account
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github-credentials', url: 'https://github.com/Mukezz/CIDemoBlog2.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github-credentials', url: 'https://github.com/MagdyIYounis/jenkins.git']]])
             }
         }
 
