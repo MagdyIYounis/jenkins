@@ -40,7 +40,7 @@ pipeline {
         stage('Running Dockerfile to create image') {
             steps {
                 script {
-                    sh "docker build -t devops/mukeshblogpost3 ."
+                    sh "sudo docker build -t devops/mukeshblogpost3 ."
                 }
             }
         }
