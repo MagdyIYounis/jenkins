@@ -40,7 +40,7 @@ pipeline {
         stage('Running Dockerfile to create image') {
             steps {
                 script {
-                    docker.build("devops/mukeshblogpost3")
+                    sh "docker build -t devops/mukeshblogpost3 ."
                 }
             }
         }
